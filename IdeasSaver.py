@@ -5,7 +5,7 @@ from PIL import Image
 from io import BytesIO
 
 # Set your OpenAI API key here
-openai.api_key = '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'
+openai.api_key = st.secrets["openai_secret"]
 
 st.title('Your Own Ideas NoteBook')
 
