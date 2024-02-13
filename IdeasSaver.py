@@ -8,6 +8,8 @@ from io import BytesIO
 openai.api_key = st.secrets["openai_secret"]
 
 st.title('Your Own Ideas NoteBook')
+with st.sidebar:
+    st.markdown("[Check Development Road](https://dashing-hole-4fb.notion.site/Roadmap-0b2c3fcd2fcf41deab241e77aad12308)")
 
 # User input for the text prompt
 user_prompt = st.text_area("Enter your business idea:", 'A futuristic cityscape')
